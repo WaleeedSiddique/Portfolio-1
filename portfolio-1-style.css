@@ -1,0 +1,83 @@
+:root{
+    --hero: rgb(187, 178, 178);
+    --primary-heading-size: 100px;
+    --primary-para-size: 20px;
+    --btn-font-size: 25px;
+    --body-color:rgba(231, 230, 230, 0.404);
+
+}
+body{
+    font-family: "Nunito",sans-serif;
+    background-color: var(--body-color);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Hero-container::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    background-image: url(images/pexels-vlado-paunovic-3034343.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-size: cover;
+    filter: brightness(40%);
+    z-index: -1;
+}
+.header-section i{
+    margin-right: 5px;
+}
+.Hero-container ,a ,i{
+    color: var(--hero);
+}
+.social-media-icons>i{
+    padding-right: 7px;
+}
+.header-section{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.Hero-sub-container{
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    color: var(--hero);
+    text-align: center;
+    line-height: 70px;
+}
+h1{
+    font-size: var(--primary-heading-size);
+}
+p{
+    font-size: var(--primary-para-size);
+    font-family: "Roboto";
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;  
+}
+.navbar ul li{
+    padding-left: 50px;
+}
+.navbar ul li:first-child{
+    color: red;
+}
+.navbar ul li:hover{
+    cursor: pointer;
+    color: red;
+    transition: ease-in 1s;
+}
+
